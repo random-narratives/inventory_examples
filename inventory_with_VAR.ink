@@ -6,7 +6,6 @@
 LIST Objects = lamp, sword, skull
 
 // The lines below define a mutable set called Inventory, and a mutable set called Room. It's possible to append or remove booleans from those.
-// 
 VAR Inventory = () // Empty set
 VAR Room = (lamp, sword, skull) // Set containing the booleans lamp, sword and skull. Those booleans have to be defined in a list, that's why we defined the list Objects in this example.
 
