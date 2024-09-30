@@ -1,11 +1,13 @@
 // Example of an inventory system using a list of states for each object
 
 -> room
-// In this example, we define a list for each property we want to track: where is the object, and is the object lit or unlit. The values of each list are the states that the property can take.
+// In this example, we define a list for each property we want to track: where is the object, and is the object lit or unlit. The values of each list below are the states that each property can take.
 LIST Locations = in_room, in_inventory, in_chest
 LIST LitUnlit = lit, unlit
 
-// We assume each object can have several properties, but only one state per property.
+// Each object can have several properties, but we assume only one state is active per property.
+// In this example, the lamp cannot be simultaneously both lit and unlit, as this would disrupt some of the script’s logic.
+// The values of the lists below are the initial active states for each object.
 VAR LampStates = (in_room, lit)
 VAR SwordStates = (in_room)
 VAR SkullStates = (in_room)
